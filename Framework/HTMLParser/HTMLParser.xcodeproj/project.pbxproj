@@ -1,0 +1,609 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0474F0981C8D80C200C44DC2 /* WPDOMNode.h in Headers */ = {isa = PBXBuildFile; fileRef = 0474F0961C8D80C200C44DC2 /* WPDOMNode.h */; };
+		0474F0991C8D80C200C44DC2 /* WPDOMNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 0474F0971C8D80C200C44DC2 /* WPDOMNode.m */; };
+		0474F09C1C8D80DA00C44DC2 /* WPDOMDocument.h in Headers */ = {isa = PBXBuildFile; fileRef = 0474F09A1C8D80DA00C44DC2 /* WPDOMDocument.h */; };
+		0474F09D1C8D80DA00C44DC2 /* WPDOMDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = 0474F09B1C8D80DA00C44DC2 /* WPDOMDocument.m */; };
+		0474F0A01C8D80EF00C44DC2 /* WPDOMElement.h in Headers */ = {isa = PBXBuildFile; fileRef = 0474F09E1C8D80EF00C44DC2 /* WPDOMElement.h */; };
+		0474F0A11C8D80EF00C44DC2 /* WPDOMElement.m in Sources */ = {isa = PBXBuildFile; fileRef = 0474F09F1C8D80EF00C44DC2 /* WPDOMElement.m */; };
+		0474F0A41C8D8A3200C44DC2 /* WPDOMManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 0474F0A21C8D8A3200C44DC2 /* WPDOMManager.h */; };
+		0474F0A51C8D8A3200C44DC2 /* WPDOMManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0474F0A31C8D8A3200C44DC2 /* WPDOMManager.m */; };
+		04818C061C89705F001E62BB /* HTMLParser.h in Headers */ = {isa = PBXBuildFile; fileRef = 04818C051C89705F001E62BB /* HTMLParser.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		04818C0D1C897060001E62BB /* HTMLParser.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04818C021C89705F001E62BB /* HTMLParser.framework */; };
+		04818C121C897060001E62BB /* HTMLParserTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 04818C111C897060001E62BB /* HTMLParserTests.m */; };
+		04818C561C8978DE001E62BB /* attribute.c in Sources */ = {isa = PBXBuildFile; fileRef = 04818C331C8978DE001E62BB /* attribute.c */; };
+		04818C571C8978DE001E62BB /* attribute.h in Headers */ = {isa = PBXBuildFile; fileRef = 04818C341C8978DE001E62BB /* attribute.h */; };
+		04818C581C8978DE001E62BB /* char_ref.c in Sources */ = {isa = PBXBuildFile; fileRef = 04818C351C8978DE001E62BB /* char_ref.c */; };
+		04818C591C8978DE001E62BB /* char_ref.h in Headers */ = {isa = PBXBuildFile; fileRef = 04818C361C8978DE001E62BB /* char_ref.h */; };
+		04818C5A1C8978DE001E62BB /* char_ref.rl in Resources */ = {isa = PBXBuildFile; fileRef = 04818C371C8978DE001E62BB /* char_ref.rl */; };
+		04818C5B1C8978DE001E62BB /* error.c in Sources */ = {isa = PBXBuildFile; fileRef = 04818C381C8978DE001E62BB /* error.c */; };
+		04818C5C1C8978DE001E62BB /* error.h in Headers */ = {isa = PBXBuildFile; fileRef = 04818C391C8978DE001E62BB /* error.h */; };
+		04818C5D1C8978DE001E62BB /* gumbo.h in Headers */ = {isa = PBXBuildFile; fileRef = 04818C3A1C8978DE001E62BB /* gumbo.h */; };
+		04818C5E1C8978DE001E62BB /* insertion_mode.h in Headers */ = {isa = PBXBuildFile; fileRef = 04818C3B1C8978DE001E62BB /* insertion_mode.h */; };
+		04818C5F1C8978DE001E62BB /* parser.c in Sources */ = {isa = PBXBuildFile; fileRef = 04818C3C1C8978DE001E62BB /* parser.c */; };
+		04818C601C8978DE001E62BB /* parser.h in Headers */ = {isa = PBXBuildFile; fileRef = 04818C3D1C8978DE001E62BB /* parser.h */; };
+		04818C611C8978DE001E62BB /* string_buffer.c in Sources */ = {isa = PBXBuildFile; fileRef = 04818C3E1C8978DE001E62BB /* string_buffer.c */; };
+		04818C621C8978DE001E62BB /* string_buffer.h in Headers */ = {isa = PBXBuildFile; fileRef = 04818C3F1C8978DE001E62BB /* string_buffer.h */; };
+		04818C631C8978DE001E62BB /* string_piece.c in Sources */ = {isa = PBXBuildFile; fileRef = 04818C401C8978DE001E62BB /* string_piece.c */; };
+		04818C641C8978DE001E62BB /* string_piece.h in Headers */ = {isa = PBXBuildFile; fileRef = 04818C411C8978DE001E62BB /* string_piece.h */; };
+		04818C651C8978DE001E62BB /* tag.c in Sources */ = {isa = PBXBuildFile; fileRef = 04818C421C8978DE001E62BB /* tag.c */; };
+		04818C661C8978DE001E62BB /* tag.in in Resources */ = {isa = PBXBuildFile; fileRef = 04818C431C8978DE001E62BB /* tag.in */; };
+		04818C671C8978DE001E62BB /* tag_enum.h in Headers */ = {isa = PBXBuildFile; fileRef = 04818C441C8978DE001E62BB /* tag_enum.h */; };
+		04818C681C8978DE001E62BB /* tag_gperf.h in Headers */ = {isa = PBXBuildFile; fileRef = 04818C451C8978DE001E62BB /* tag_gperf.h */; };
+		04818C691C8978DE001E62BB /* tag_sizes.h in Headers */ = {isa = PBXBuildFile; fileRef = 04818C461C8978DE001E62BB /* tag_sizes.h */; };
+		04818C6A1C8978DE001E62BB /* tag_strings.h in Headers */ = {isa = PBXBuildFile; fileRef = 04818C471C8978DE001E62BB /* tag_strings.h */; };
+		04818C6B1C8978DE001E62BB /* token_type.h in Headers */ = {isa = PBXBuildFile; fileRef = 04818C481C8978DE001E62BB /* token_type.h */; };
+		04818C6C1C8978DE001E62BB /* tokenizer.c in Sources */ = {isa = PBXBuildFile; fileRef = 04818C491C8978DE001E62BB /* tokenizer.c */; };
+		04818C6D1C8978DE001E62BB /* tokenizer.h in Headers */ = {isa = PBXBuildFile; fileRef = 04818C4A1C8978DE001E62BB /* tokenizer.h */; };
+		04818C6E1C8978DE001E62BB /* tokenizer_states.h in Headers */ = {isa = PBXBuildFile; fileRef = 04818C4B1C8978DE001E62BB /* tokenizer_states.h */; };
+		04818C6F1C8978DE001E62BB /* utf8.c in Sources */ = {isa = PBXBuildFile; fileRef = 04818C4C1C8978DE001E62BB /* utf8.c */; };
+		04818C701C8978DE001E62BB /* utf8.h in Headers */ = {isa = PBXBuildFile; fileRef = 04818C4D1C8978DE001E62BB /* utf8.h */; };
+		04818C711C8978DE001E62BB /* util.c in Sources */ = {isa = PBXBuildFile; fileRef = 04818C4E1C8978DE001E62BB /* util.c */; };
+		04818C721C8978DE001E62BB /* util.h in Headers */ = {isa = PBXBuildFile; fileRef = 04818C4F1C8978DE001E62BB /* util.h */; };
+		04818C731C8978DE001E62BB /* vector.c in Sources */ = {isa = PBXBuildFile; fileRef = 04818C501C8978DE001E62BB /* vector.c */; };
+		04818C741C8978DE001E62BB /* vector.h in Headers */ = {isa = PBXBuildFile; fileRef = 04818C511C8978DE001E62BB /* vector.h */; };
+		04818C751C8978DE001E62BB /* OCGumbo+Query.h in Headers */ = {isa = PBXBuildFile; fileRef = 04818C521C8978DE001E62BB /* OCGumbo+Query.h */; };
+		04818C761C8978DE001E62BB /* OCGumbo+Query.m in Sources */ = {isa = PBXBuildFile; fileRef = 04818C531C8978DE001E62BB /* OCGumbo+Query.m */; };
+		04818C771C8978DE001E62BB /* OCGumbo.h in Headers */ = {isa = PBXBuildFile; fileRef = 04818C541C8978DE001E62BB /* OCGumbo.h */; };
+		04818C781C8978DE001E62BB /* OCGumbo.m in Sources */ = {isa = PBXBuildFile; fileRef = 04818C551C8978DE001E62BB /* OCGumbo.m */; };
+		04818DBB1C897E2F001E62BB /* WPParserHTML.h in Headers */ = {isa = PBXBuildFile; fileRef = 04818DB71C897E2F001E62BB /* WPParserHTML.h */; };
+		04818DBC1C897E2F001E62BB /* WPParserHTML.m in Sources */ = {isa = PBXBuildFile; fileRef = 04818DB81C897E2F001E62BB /* WPParserHTML.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		04818C0E1C897060001E62BB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 04818BF91C89705F001E62BB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 04818C011C89705F001E62BB;
+			remoteInfo = HTMLParser;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0474F0961C8D80C200C44DC2 /* WPDOMNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WPDOMNode.h; sourceTree = "<group>"; };
+		0474F0971C8D80C200C44DC2 /* WPDOMNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WPDOMNode.m; sourceTree = "<group>"; };
+		0474F09A1C8D80DA00C44DC2 /* WPDOMDocument.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WPDOMDocument.h; sourceTree = "<group>"; };
+		0474F09B1C8D80DA00C44DC2 /* WPDOMDocument.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WPDOMDocument.m; sourceTree = "<group>"; };
+		0474F09E1C8D80EF00C44DC2 /* WPDOMElement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WPDOMElement.h; sourceTree = "<group>"; };
+		0474F09F1C8D80EF00C44DC2 /* WPDOMElement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WPDOMElement.m; sourceTree = "<group>"; };
+		0474F0A21C8D8A3200C44DC2 /* WPDOMManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WPDOMManager.h; sourceTree = "<group>"; };
+		0474F0A31C8D8A3200C44DC2 /* WPDOMManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WPDOMManager.m; sourceTree = "<group>"; };
+		04818C021C89705F001E62BB /* HTMLParser.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = HTMLParser.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		04818C051C89705F001E62BB /* HTMLParser.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HTMLParser.h; sourceTree = "<group>"; };
+		04818C071C89705F001E62BB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04818C0C1C897060001E62BB /* HTMLParserTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HTMLParserTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		04818C111C897060001E62BB /* HTMLParserTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HTMLParserTests.m; sourceTree = "<group>"; };
+		04818C131C897060001E62BB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04818C331C8978DE001E62BB /* attribute.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = attribute.c; sourceTree = "<group>"; };
+		04818C341C8978DE001E62BB /* attribute.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = attribute.h; sourceTree = "<group>"; };
+		04818C351C8978DE001E62BB /* char_ref.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = char_ref.c; sourceTree = "<group>"; };
+		04818C361C8978DE001E62BB /* char_ref.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = char_ref.h; sourceTree = "<group>"; };
+		04818C371C8978DE001E62BB /* char_ref.rl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = char_ref.rl; sourceTree = "<group>"; };
+		04818C381C8978DE001E62BB /* error.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = error.c; sourceTree = "<group>"; };
+		04818C391C8978DE001E62BB /* error.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = error.h; sourceTree = "<group>"; };
+		04818C3A1C8978DE001E62BB /* gumbo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = gumbo.h; sourceTree = "<group>"; };
+		04818C3B1C8978DE001E62BB /* insertion_mode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = insertion_mode.h; sourceTree = "<group>"; };
+		04818C3C1C8978DE001E62BB /* parser.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = parser.c; sourceTree = "<group>"; };
+		04818C3D1C8978DE001E62BB /* parser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = parser.h; sourceTree = "<group>"; };
+		04818C3E1C8978DE001E62BB /* string_buffer.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = string_buffer.c; sourceTree = "<group>"; };
+		04818C3F1C8978DE001E62BB /* string_buffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = string_buffer.h; sourceTree = "<group>"; };
+		04818C401C8978DE001E62BB /* string_piece.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = string_piece.c; sourceTree = "<group>"; };
+		04818C411C8978DE001E62BB /* string_piece.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = string_piece.h; sourceTree = "<group>"; };
+		04818C421C8978DE001E62BB /* tag.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = tag.c; sourceTree = "<group>"; };
+		04818C431C8978DE001E62BB /* tag.in */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = tag.in; sourceTree = "<group>"; };
+		04818C441C8978DE001E62BB /* tag_enum.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tag_enum.h; sourceTree = "<group>"; };
+		04818C451C8978DE001E62BB /* tag_gperf.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tag_gperf.h; sourceTree = "<group>"; };
+		04818C461C8978DE001E62BB /* tag_sizes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tag_sizes.h; sourceTree = "<group>"; };
+		04818C471C8978DE001E62BB /* tag_strings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tag_strings.h; sourceTree = "<group>"; };
+		04818C481C8978DE001E62BB /* token_type.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = token_type.h; sourceTree = "<group>"; };
+		04818C491C8978DE001E62BB /* tokenizer.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = tokenizer.c; sourceTree = "<group>"; };
+		04818C4A1C8978DE001E62BB /* tokenizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tokenizer.h; sourceTree = "<group>"; };
+		04818C4B1C8978DE001E62BB /* tokenizer_states.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tokenizer_states.h; sourceTree = "<group>"; };
+		04818C4C1C8978DE001E62BB /* utf8.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = utf8.c; sourceTree = "<group>"; };
+		04818C4D1C8978DE001E62BB /* utf8.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = utf8.h; sourceTree = "<group>"; };
+		04818C4E1C8978DE001E62BB /* util.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = util.c; sourceTree = "<group>"; };
+		04818C4F1C8978DE001E62BB /* util.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = util.h; sourceTree = "<group>"; };
+		04818C501C8978DE001E62BB /* vector.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = vector.c; sourceTree = "<group>"; };
+		04818C511C8978DE001E62BB /* vector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vector.h; sourceTree = "<group>"; };
+		04818C521C8978DE001E62BB /* OCGumbo+Query.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "OCGumbo+Query.h"; sourceTree = "<group>"; };
+		04818C531C8978DE001E62BB /* OCGumbo+Query.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "OCGumbo+Query.m"; sourceTree = "<group>"; };
+		04818C541C8978DE001E62BB /* OCGumbo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCGumbo.h; sourceTree = "<group>"; };
+		04818C551C8978DE001E62BB /* OCGumbo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OCGumbo.m; sourceTree = "<group>"; };
+		04818DB71C897E2F001E62BB /* WPParserHTML.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WPParserHTML.h; sourceTree = "<group>"; };
+		04818DB81C897E2F001E62BB /* WPParserHTML.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WPParserHTML.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		04818BFE1C89705F001E62BB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04818C091C897060001E62BB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04818C0D1C897060001E62BB /* HTMLParser.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		04818BF81C89705F001E62BB = {
+			isa = PBXGroup;
+			children = (
+				04818C2F1C8978DE001E62BB /* Classes */,
+				04818C301C8978DE001E62BB /* Headers */,
+				04818C311C8978DE001E62BB /* OCGumbo */,
+				04818C041C89705F001E62BB /* HTMLParser */,
+				04818C101C897060001E62BB /* HTMLParserTests */,
+				04818C031C89705F001E62BB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		04818C031C89705F001E62BB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				04818C021C89705F001E62BB /* HTMLParser.framework */,
+				04818C0C1C897060001E62BB /* HTMLParserTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		04818C041C89705F001E62BB /* HTMLParser */ = {
+			isa = PBXGroup;
+			children = (
+				04818C051C89705F001E62BB /* HTMLParser.h */,
+				04818C071C89705F001E62BB /* Info.plist */,
+			);
+			path = HTMLParser;
+			sourceTree = "<group>";
+		};
+		04818C101C897060001E62BB /* HTMLParserTests */ = {
+			isa = PBXGroup;
+			children = (
+				04818C111C897060001E62BB /* HTMLParserTests.m */,
+				04818C131C897060001E62BB /* Info.plist */,
+			);
+			path = HTMLParserTests;
+			sourceTree = "<group>";
+		};
+		04818C2F1C8978DE001E62BB /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				04818DB71C897E2F001E62BB /* WPParserHTML.h */,
+				04818DB81C897E2F001E62BB /* WPParserHTML.m */,
+				0474F0A21C8D8A3200C44DC2 /* WPDOMManager.h */,
+				0474F0A31C8D8A3200C44DC2 /* WPDOMManager.m */,
+				0474F0961C8D80C200C44DC2 /* WPDOMNode.h */,
+				0474F0971C8D80C200C44DC2 /* WPDOMNode.m */,
+				0474F09A1C8D80DA00C44DC2 /* WPDOMDocument.h */,
+				0474F09B1C8D80DA00C44DC2 /* WPDOMDocument.m */,
+				0474F09E1C8D80EF00C44DC2 /* WPDOMElement.h */,
+				0474F09F1C8D80EF00C44DC2 /* WPDOMElement.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		04818C301C8978DE001E62BB /* Headers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Headers;
+			sourceTree = "<group>";
+		};
+		04818C311C8978DE001E62BB /* OCGumbo */ = {
+			isa = PBXGroup;
+			children = (
+				04818C321C8978DE001E62BB /* Gumbo */,
+				04818C521C8978DE001E62BB /* OCGumbo+Query.h */,
+				04818C531C8978DE001E62BB /* OCGumbo+Query.m */,
+				04818C541C8978DE001E62BB /* OCGumbo.h */,
+				04818C551C8978DE001E62BB /* OCGumbo.m */,
+			);
+			path = OCGumbo;
+			sourceTree = "<group>";
+		};
+		04818C321C8978DE001E62BB /* Gumbo */ = {
+			isa = PBXGroup;
+			children = (
+				04818C331C8978DE001E62BB /* attribute.c */,
+				04818C341C8978DE001E62BB /* attribute.h */,
+				04818C351C8978DE001E62BB /* char_ref.c */,
+				04818C361C8978DE001E62BB /* char_ref.h */,
+				04818C371C8978DE001E62BB /* char_ref.rl */,
+				04818C381C8978DE001E62BB /* error.c */,
+				04818C391C8978DE001E62BB /* error.h */,
+				04818C3A1C8978DE001E62BB /* gumbo.h */,
+				04818C3B1C8978DE001E62BB /* insertion_mode.h */,
+				04818C3C1C8978DE001E62BB /* parser.c */,
+				04818C3D1C8978DE001E62BB /* parser.h */,
+				04818C3E1C8978DE001E62BB /* string_buffer.c */,
+				04818C3F1C8978DE001E62BB /* string_buffer.h */,
+				04818C401C8978DE001E62BB /* string_piece.c */,
+				04818C411C8978DE001E62BB /* string_piece.h */,
+				04818C421C8978DE001E62BB /* tag.c */,
+				04818C431C8978DE001E62BB /* tag.in */,
+				04818C441C8978DE001E62BB /* tag_enum.h */,
+				04818C451C8978DE001E62BB /* tag_gperf.h */,
+				04818C461C8978DE001E62BB /* tag_sizes.h */,
+				04818C471C8978DE001E62BB /* tag_strings.h */,
+				04818C481C8978DE001E62BB /* token_type.h */,
+				04818C491C8978DE001E62BB /* tokenizer.c */,
+				04818C4A1C8978DE001E62BB /* tokenizer.h */,
+				04818C4B1C8978DE001E62BB /* tokenizer_states.h */,
+				04818C4C1C8978DE001E62BB /* utf8.c */,
+				04818C4D1C8978DE001E62BB /* utf8.h */,
+				04818C4E1C8978DE001E62BB /* util.c */,
+				04818C4F1C8978DE001E62BB /* util.h */,
+				04818C501C8978DE001E62BB /* vector.c */,
+				04818C511C8978DE001E62BB /* vector.h */,
+			);
+			path = Gumbo;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		04818BFF1C89705F001E62BB /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04818C721C8978DE001E62BB /* util.h in Headers */,
+				04818C061C89705F001E62BB /* HTMLParser.h in Headers */,
+				0474F0A01C8D80EF00C44DC2 /* WPDOMElement.h in Headers */,
+				04818C741C8978DE001E62BB /* vector.h in Headers */,
+				04818C6A1C8978DE001E62BB /* tag_strings.h in Headers */,
+				04818C701C8978DE001E62BB /* utf8.h in Headers */,
+				04818C6B1C8978DE001E62BB /* token_type.h in Headers */,
+				04818C681C8978DE001E62BB /* tag_gperf.h in Headers */,
+				0474F0A41C8D8A3200C44DC2 /* WPDOMManager.h in Headers */,
+				04818DBB1C897E2F001E62BB /* WPParserHTML.h in Headers */,
+				04818C5D1C8978DE001E62BB /* gumbo.h in Headers */,
+				04818C591C8978DE001E62BB /* char_ref.h in Headers */,
+				04818C771C8978DE001E62BB /* OCGumbo.h in Headers */,
+				04818C6E1C8978DE001E62BB /* tokenizer_states.h in Headers */,
+				04818C571C8978DE001E62BB /* attribute.h in Headers */,
+				04818C671C8978DE001E62BB /* tag_enum.h in Headers */,
+				04818C691C8978DE001E62BB /* tag_sizes.h in Headers */,
+				04818C601C8978DE001E62BB /* parser.h in Headers */,
+				04818C621C8978DE001E62BB /* string_buffer.h in Headers */,
+				0474F0981C8D80C200C44DC2 /* WPDOMNode.h in Headers */,
+				04818C5C1C8978DE001E62BB /* error.h in Headers */,
+				0474F09C1C8D80DA00C44DC2 /* WPDOMDocument.h in Headers */,
+				04818C6D1C8978DE001E62BB /* tokenizer.h in Headers */,
+				04818C641C8978DE001E62BB /* string_piece.h in Headers */,
+				04818C751C8978DE001E62BB /* OCGumbo+Query.h in Headers */,
+				04818C5E1C8978DE001E62BB /* insertion_mode.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		04818C011C89705F001E62BB /* HTMLParser */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 04818C161C897060001E62BB /* Build configuration list for PBXNativeTarget "HTMLParser" */;
+			buildPhases = (
+				04818BFD1C89705F001E62BB /* Sources */,
+				04818BFE1C89705F001E62BB /* Frameworks */,
+				04818BFF1C89705F001E62BB /* Headers */,
+				04818C001C89705F001E62BB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HTMLParser;
+			productName = HTMLParser;
+			productReference = 04818C021C89705F001E62BB /* HTMLParser.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		04818C0B1C897060001E62BB /* HTMLParserTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 04818C191C897060001E62BB /* Build configuration list for PBXNativeTarget "HTMLParserTests" */;
+			buildPhases = (
+				04818C081C897060001E62BB /* Sources */,
+				04818C091C897060001E62BB /* Frameworks */,
+				04818C0A1C897060001E62BB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				04818C0F1C897060001E62BB /* PBXTargetDependency */,
+			);
+			name = HTMLParserTests;
+			productName = HTMLParserTests;
+			productReference = 04818C0C1C897060001E62BB /* HTMLParserTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		04818BF91C89705F001E62BB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0710;
+				ORGANIZATIONNAME = YAO;
+				TargetAttributes = {
+					04818C011C89705F001E62BB = {
+						CreatedOnToolsVersion = 7.1.1;
+					};
+					04818C0B1C897060001E62BB = {
+						CreatedOnToolsVersion = 7.1.1;
+					};
+				};
+			};
+			buildConfigurationList = 04818BFC1C89705F001E62BB /* Build configuration list for PBXProject "HTMLParser" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 04818BF81C89705F001E62BB;
+			productRefGroup = 04818C031C89705F001E62BB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				04818C011C89705F001E62BB /* HTMLParser */,
+				04818C0B1C897060001E62BB /* HTMLParserTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		04818C001C89705F001E62BB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04818C5A1C8978DE001E62BB /* char_ref.rl in Resources */,
+				04818C661C8978DE001E62BB /* tag.in in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04818C0A1C897060001E62BB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		04818BFD1C89705F001E62BB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0474F09D1C8D80DA00C44DC2 /* WPDOMDocument.m in Sources */,
+				04818C651C8978DE001E62BB /* tag.c in Sources */,
+				0474F0991C8D80C200C44DC2 /* WPDOMNode.m in Sources */,
+				0474F0A11C8D80EF00C44DC2 /* WPDOMElement.m in Sources */,
+				04818C781C8978DE001E62BB /* OCGumbo.m in Sources */,
+				04818C611C8978DE001E62BB /* string_buffer.c in Sources */,
+				04818C5B1C8978DE001E62BB /* error.c in Sources */,
+				04818C561C8978DE001E62BB /* attribute.c in Sources */,
+				04818C631C8978DE001E62BB /* string_piece.c in Sources */,
+				0474F0A51C8D8A3200C44DC2 /* WPDOMManager.m in Sources */,
+				04818C731C8978DE001E62BB /* vector.c in Sources */,
+				04818C711C8978DE001E62BB /* util.c in Sources */,
+				04818DBC1C897E2F001E62BB /* WPParserHTML.m in Sources */,
+				04818C761C8978DE001E62BB /* OCGumbo+Query.m in Sources */,
+				04818C5F1C8978DE001E62BB /* parser.c in Sources */,
+				04818C6F1C8978DE001E62BB /* utf8.c in Sources */,
+				04818C581C8978DE001E62BB /* char_ref.c in Sources */,
+				04818C6C1C8978DE001E62BB /* tokenizer.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04818C081C897060001E62BB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04818C121C897060001E62BB /* HTMLParserTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		04818C0F1C897060001E62BB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 04818C011C89705F001E62BB /* HTMLParser */;
+			targetProxy = 04818C0E1C897060001E62BB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		04818C141C897060001E62BB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		04818C151C897060001E62BB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		04818C171C897060001E62BB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				HEADER_SEARCH_PATHS = "./OCGumbo/**";
+				INFOPLIST_FILE = HTMLParser/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.yao.HTMLParser;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		04818C181C897060001E62BB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				HEADER_SEARCH_PATHS = "./OCGumbo/**";
+				INFOPLIST_FILE = HTMLParser/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.yao.HTMLParser;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		04818C1A1C897060001E62BB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = HTMLParserTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.yao.HTMLParserTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		04818C1B1C897060001E62BB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = HTMLParserTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.yao.HTMLParserTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		04818BFC1C89705F001E62BB /* Build configuration list for PBXProject "HTMLParser" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04818C141C897060001E62BB /* Debug */,
+				04818C151C897060001E62BB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		04818C161C897060001E62BB /* Build configuration list for PBXNativeTarget "HTMLParser" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04818C171C897060001E62BB /* Debug */,
+				04818C181C897060001E62BB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		04818C191C897060001E62BB /* Build configuration list for PBXNativeTarget "HTMLParserTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04818C1A1C897060001E62BB /* Debug */,
+				04818C1B1C897060001E62BB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 04818BF91C89705F001E62BB /* Project object */;
+}
